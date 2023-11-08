@@ -164,8 +164,6 @@ npx hardhat cross-chain-mint --source-minter <SOURCE_MINTER_ADDRESS> --source-bl
 
 5. Once the CCIP message is finalized on the destination blockchain, you can query the MyNFTs balance of your account, using the `balance-of` task:
 
-![ccip-explorer](./img/ccip-explorer.png)
-
 ```shell
 npx hardhat balance-of
 --my-nft <myNftContractAddress>
@@ -181,7 +179,6 @@ npx hardhat balance-of --my-nft <MY_NFT_CONTRACT_ADDRESS> --blockchain avalanche
 
 Of course, you can see your newly minted NFT on popular NFT Marketplaces, like OpenSea for instance:
 
-![opensea](./img/opensea.png)
 
 6. You can always withdraw tokens for Chainlink CCIP fees from the [`SourceMinter.sol`](./contracts/cross-chain-nft-minter/SourceMinter.sol) smart contract using the `withdraw` task. Note that the `--token-address` flag is optional. If not provided, native coins will be withdrawn.
 
